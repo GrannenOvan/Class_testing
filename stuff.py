@@ -1,16 +1,25 @@
 """Hello"""
+class Hero:
+    nisse = 1
+    def die(self):
+        print('Cruel, grim world!')
 
-class StuffClass:
+class Vilain(Hero):
     """Class for showing how classes works"""
 
-    def  __init__(self, value:int=0) -> None:
-        print(f"Init of stuff. Count set to {value}")
-        self._count = value
+#    def  __init__(self, value:int=0) -> None:
+#        print(f"Init of stuff. Count set to {value}")
+#        self._count = value
 
     def update(self):
         """Update counter value"""
         self._count += 1
         self.show_count()
+
+    def dies(self):
+        """gg"""
+        self.die()
+        print('Aurgh!')
 
     def show_count(self):
         """Print count value"""
